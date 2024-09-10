@@ -4,7 +4,7 @@ import { Facility } from '../../common/facility';
 
 @Component({
   selector: 'app-facility-list',
-  templateUrl: './facility-list.component.html',
+  templateUrl: './facility-list-table.component.html',
   styleUrl: './facility-list.component.css'
 })
 export class FacilityListComponent {

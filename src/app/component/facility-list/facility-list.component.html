@@ -1,9 +1,20 @@
-<p *ngFor=" let temp of facilities">
-
-    name:{{ temp.name }}<br>
-    description:{{ temp.description }}<br>
-    slot duration:{{ temp.slotduration }}<br>
-    starttime:{{ temp.starttime }}<br>
-    endtime:{{ temp.endtime }}<br>
-    
-</p>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">slot duration</th>
+        <th scope="col">Start Time</th>
+        <th scope="col">Endtime</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let temp of facilities">
+        <td>{{ temp.name }}</td>
+        <td>{{ temp.description }}</td>
+        <td>{{ temp.slotduration }}</td>
+        <td>{{ temp.starttime }}</td>
+        <td>{{ temp.endtime }}</td>
+      </tr>
+    </tbody>
+  </table>
